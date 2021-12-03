@@ -74,17 +74,6 @@ class ValueTest extends TestCase
     }
 
     /**
-     * Test Invalid FullUrl
-     *
-     * @test
-     */
-    public function testInvalidValueExceptionOnFullUrl()
-    {
-        $this->expectException(InvalidValueException::class);
-        new Value('http://textures.minecraft.net/texture/thisIsNothing');
-    }
-
-    /**
      * Test Invalid Value: Empty, encoded stdClass object
      *
      * @test

@@ -97,10 +97,7 @@ class Value
      */
     private function getUrlFromFullUrl()
     {
-        $url = str_replace(self::MOJANG_SKIN_URL, '', $this->urlFull);
-        if (strlen($url) !== 64)
-            throw new InvalidValueException();
-        $this->url = $url;
+        $this->url = str_replace(self::MOJANG_SKIN_URL, '', $this->urlFull);
     }
 
     /**
