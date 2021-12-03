@@ -3,21 +3,6 @@ A PHP Library about the Minecraft Custom Heads Value
 
 <br>
 
-## UUID Formats
-Regular UUIDs (Hyphenated Hexadecimal):
-
-```ea3bc3ec-7051-4efc-87f9-68635c9b473a```
-
-Trimmed UUIDs (Hexadecimal):
-
-`ea3bc3ec70514efc87f968635c9b473a`
-
-UUIDs as Integer Arrays (Int-Array):
-
-`[I;-365181972,1884376828,-2013697949,1553680186]`
-
-<br>
-
 ## How to use
 Create a new Value object:
 
