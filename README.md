@@ -3,6 +3,11 @@ A PHP Library about the Minecraft Custom Heads Value
 
 <br>
 
+## Installation
+`composer require lordrazen/minecraft-value`
+
+<br>
+
 ## How to use
 Create a new Value object:
 
