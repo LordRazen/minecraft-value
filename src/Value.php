@@ -31,8 +31,8 @@ class Value
         if (str_contains($input, self::MOJANG_SKIN_URL)) {
             $this->urlFull = $input;
         }
-        # URL (exactly 64 characters)
-        else if (strlen($input) === 64) {
+        # URL (60 - 64 characters, 60 isn't ensured as smallest length!)
+        else if (strlen($input) >= 60 && strlen($input) <= 64) {
             $this->url = $input;
         }
         # Value 
