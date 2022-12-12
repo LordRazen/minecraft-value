@@ -1,3 +1,4 @@
 tests       export-ignore
 demo        export-ignore
 phpunit.xml export-ignore
+README.md   export-ignore
