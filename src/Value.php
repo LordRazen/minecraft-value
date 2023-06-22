@@ -75,6 +75,14 @@ class Value
     private function getFullUrlFromValue()
     {
         $jsonObject = json_decode(base64_decode($this->value));
+
+        # JSON Object could not be decoded, NameMC Fix
+        if (is_null($jsonObject)) {
+            $invalidJson = base64_decode($this->value);
+            $fixedJsonString = preg_replace('/(?<=\{|\{|,)(\b(?:textures|SKIN|url)\b)(?=:)/', '"$1"', $invalidJson);
+            $jsonObject = json_decode($fixedJsonString);
+        }
+
         if (!is_object($jsonObject))
             throw new InvalidValueException();
         if (!isset($jsonObject->textures->SKIN->url))

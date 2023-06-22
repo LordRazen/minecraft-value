@@ -69,6 +69,22 @@ class ValueTest extends TestCase
                     'urlFull' => 'http://textures.minecraft.net/texture/2876a49f8a5422e525b7781c92cfdd6cc606cd571aa15de89cd2ff526735d053',
                     'url' => '2876a49f8a5422e525b7781c92cfdd6cc606cd571aa15de89cd2ff526735d053'
                 ]
+            ],
+            [
+                [
+                    'value' => 'e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM4NTRjODI0M2Y3ZDA3MzdmOGNhMGYzOWU3ZmFiMDg4ZTE1NGMyNjdkYjIyMmZiZDZmZTZjZTdjOTA4NzdkMSJ9fX0=',
+                    'valueCleaned' => 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM4NTRjODI0M2Y3ZDA3MzdmOGNhMGYzOWU3ZmFiMDg4ZTE1NGMyNjdkYjIyMmZiZDZmZTZjZTdjOTA4NzdkMSJ9fX0=',
+                    'urlFull' => 'http://textures.minecraft.net/texture/c3854c8243f7d0737f8ca0f39e7fab088e154c267db222fbd6fe6ce7c90877d1',
+                    'url' => 'c3854c8243f7d0737f8ca0f39e7fab088e154c267db222fbd6fe6ce7c90877d1'
+                ]
+            ],
+            [
+                [
+                    'value' => 'e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAzMjIyMGU3ZjMwY2Y4M2U0ZDVhYmU1Nzk1MjBhNzk1YWIwZTk3NmQ2ZTZkMTc0YTE4MmNlMjVlNWY1YTA3OSJ9fX0=',
+                    'valueCleaned' => 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAzMjIyMGU3ZjMwY2Y4M2U0ZDVhYmU1Nzk1MjBhNzk1YWIwZTk3NmQ2ZTZkMTc0YTE4MmNlMjVlNWY1YTA3OSJ9fX0=',
+                    'urlFull' => 'http://textures.minecraft.net/texture/3032220e7f30cf83e4d5abe579520a795ab0e976d6e6d174a182ce25e5f5a079',
+                    'url' => '3032220e7f30cf83e4d5abe579520a795ab0e976d6e6d174a182ce25e5f5a079'
+                ]
             ]
         ];
     }
