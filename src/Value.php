@@ -35,10 +35,14 @@ class Value
         else if (strlen($input) >= 60 && strlen($input) <= 64) {
             $this->url = $input;
         }
-        # Value 
+        # Value or most likely manipiulated input
         else {
             $this->value = $input;
         }
+
+        // echo ('<hr>START:');
+        // var_dump($this);
+        // echo ('<hr>');
 
         # Generate Value Data
         $this->generateValueData();
@@ -61,9 +65,9 @@ class Value
         }
         # Value
         else if (isset($this->value)) {
-            $this->getFullUrlFromValue();
-            $this->getValueFromFullUrl(); # Clean the value
-            $this->getUrlFromFullUrl();
+            $this->getUrlFromValue();
+            $this->getFullUrlFromUrl();
+            $this->getValueFromFullUrl();
         }
     }
 
@@ -72,7 +76,7 @@ class Value
      * 
      * @throws InvalidValueException
      */
-    private function getFullUrlFromValue()
+    private function getUrlFromValue()
     {
         $jsonObject = json_decode(base64_decode($this->value));
 
@@ -87,7 +91,15 @@ class Value
             throw new InvalidValueException();
         if (!isset($jsonObject->textures->SKIN->url))
             throw new InvalidValueException();
-        $this->urlFull = $jsonObject->textures->SKIN->url;
+
+        # Extract url ONLY! (avoid XSS)
+        $fullUrl = $jsonObject->textures->SKIN->url;
+        $pattern = '/http:\/\/textures\.minecraft\.net\/texture\/([a-z0-9]*)/';
+        preg_match($pattern, $fullUrl, $matches);
+        if (!isset($matches[1]))
+            throw new InvalidValueException();
+
+        $this->url = $matches[1];
     }
 
     /**

@@ -26,3 +26,9 @@ echo '<hr>';
 echo 'Cleaned Value on NameMC Value:';
 $value4 = new Value('e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAzMjIyMGU3ZjMwY2Y4M2U0ZDVhYmU1Nzk1MjBhNzk1YWIwZTk3NmQ2ZTZkMTc0YTE4MmNlMjVlNWY1YTA3OSJ9fX0=');
 var_dump($value4);
+
+echo '<hr>';
+
+echo 'XSS Value:';
+$value4 = new Value('eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc1OWMyMzhmZjNjZTc5NmRkMTQwMDZjMmFmNDEwN2FiZWE2NTg1NjlhNjBjMWVmNWE1MzliOWRiNWY1MjU5NCNcIj48aW1nL3NyYy9vbmVycm9yPWFsZXJ0KDIpPiJ9fX0=');
+var_dump($value4);
