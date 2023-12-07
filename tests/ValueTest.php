@@ -86,7 +86,7 @@ class ValueTest extends TestCase
                     'url' => '3032220e7f30cf83e4d5abe579520a795ab0e976d6e6d174a182ce25e5f5a079'
                 ]
             ],
-            # Potential CSS (html within the encoded url)
+            # Potential XSS (html within the encoded url)
             [
                 [
                     'value' => 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDc1OWMyMzhmZjNjZTc5NmRkMTQwMDZjMmFmNDEwN2FiZWE2NTg1NjlhNjBjMWVmNWE1MzliOWRiNWY1MjU5NCNcIj48aW1nL3NyYy9vbmVycm9yPWFsZXJ0KDIpPiJ9fX0=',
