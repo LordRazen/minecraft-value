@@ -94,6 +94,15 @@ class ValueTest extends TestCase
                     'urlFull' => 'http://textures.minecraft.net/texture/d759c238ff3ce796dd14006c2af4107abea658569a60c1ef5a539b9db5f52594',
                     'url' => 'd759c238ff3ce796dd14006c2af4107abea658569a60c1ef5a539b9db5f52594'
                 ]
+            ],
+            # New Mineskin Value
+            [
+                [
+                    'value' => 'ewogICJ0aW1lc3RhbXAiIDogMTcxNTY5NjM3MjgyMCwKICAicHJvZmlsZUlkIiA6ICJmNmYxY2IxMmYzNDU0MDRlYjZlNjU2NGE2ZDlmMjU2NyIsCiAgInByb2ZpbGVOYW1lIiA6ICJBdXJlbGl1c0dlbWluaSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81MGI0NDU5YmJmZDcyMWFjYWY0MjRkYjhlODgwZDUyODVkYmQ5MzAxZmJlZjg1YzMwMmY3ZDM5ZDI4M2FkN2Y2IiwKICAgICAgIm1ldGFkYXRhIiA6IHsKICAgICAgICAibW9kZWwiIDogInNsaW0iCiAgICAgIH0KICAgIH0KICB9Cn0=',
+                    'valueCleaned' => 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTBiNDQ1OWJiZmQ3MjFhY2FmNDI0ZGI4ZTg4MGQ1Mjg1ZGJkOTMwMWZiZWY4NWMzMDJmN2QzOWQyODNhZDdmNiJ9fX0=',
+                    'urlFull' => 'http://textures.minecraft.net/texture/50b4459bbfd721acaf424db8e880d5285dbd9301fbef85c302f7d39d283ad7f6',
+                    'url' => '50b4459bbfd721acaf424db8e880d5285dbd9301fbef85c302f7d39d283ad7f6'
+                ]
             ]
         ];
     }
