@@ -5,7 +5,7 @@
  *
  * @package			MinecraftLibrary
  * @author			LordRazen <http://www.minecraft-heads.com>	
- * @copyright		Copyright (C) 2020. All Rights Reserved
+ * @copyright		Copyright (C) 2024. All Rights Reserved
  */
 
 use Minecraft\Exception\InvalidValueException;

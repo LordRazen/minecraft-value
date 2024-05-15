@@ -5,7 +5,7 @@
  * 
  * @package			MinecraftLibrary
  * @author			LordRazen <http://www.minecraft-heads.com>	
- * @copyright		Copyright (C) 2020. All Rights Reserved
+ * @copyright		Copyright (C) 2024. All Rights Reserved
  */
 
 namespace Minecraft;
@@ -39,10 +39,6 @@ class Value
         else {
             $this->value = $input;
         }
-
-        // echo ('<hr>START:');
-        // var_dump($this);
-        // echo ('<hr>');
 
         # Generate Value Data
         $this->generateValueData();
