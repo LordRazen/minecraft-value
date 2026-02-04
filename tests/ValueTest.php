@@ -10,16 +10,17 @@
 
 use Minecraft\Exception\InvalidValueException;
 use Minecraft\Value;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
 class ValueTest extends TestCase
 {
     /**
      * Test if the value is calculated correctly from Url
-     *
-     * @test
-     * @dataProvider dataValue
      */
+    #[Test]
+    #[DataProvider('dataValue')]
     public function testCleanValueObjectFromUrl(array $data)
     {
         $value = new Value($data['url']);
@@ -31,10 +32,9 @@ class ValueTest extends TestCase
 
     /**
      * Test if the value is calculated correctly from FullUrl
-     *
-     * @test
-     * @dataProvider dataValue
      */
+    #[Test]
+    #[DataProvider('dataValue')]
     public function testCleanValueObjectFromFullUrl(array $data)
     {
         $value = new Value($data['urlFull']);
@@ -46,10 +46,9 @@ class ValueTest extends TestCase
 
     /**
      * Test if the value is calculated correctly from Url
-     *
-     * @test
-     * @dataProvider dataValue
      */
+    #[Test]
+    #[DataProvider('dataValue')]
     public function testCleanValueObjectFromValue(array $data)
     {
         $value = new Value($data['value']);
@@ -59,7 +58,7 @@ class ValueTest extends TestCase
         $this->assertSame($data['valueCleaned'], $value->getValue());
     }
 
-    public function dataValue()
+    public static function dataValue()
     {
         return [
             [
@@ -109,9 +108,8 @@ class ValueTest extends TestCase
 
     /**
      * Test Invalid Value: Empty, encoded stdClass object
-     *
-     * @test
      */
+    #[Test]
     public function testInvalidValueExceptionOnEmptyValue()
     {
         # Empty encoded stdClass object
@@ -121,9 +119,8 @@ class ValueTest extends TestCase
 
     /**
      * Test Invalid Value: Random Value
-     *
-     * @test
      */
+    #[Test]
     public function testInvalidValueExceptionOnRandomValue()
     {
         # Just a random thing
