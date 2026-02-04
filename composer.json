@@ -1,24 +1,28 @@
 {
-    "name": "lordrazen/minecraft-value",
-    "type": "library",
-    "description": "A PHP Library For the Minecraft Custom Heads Value.",
-    "keywords": ["Minecraft","Value", "Heads"],
-    "homepage": "https://github.com/LordRazen/minecraft-value",
-    "license": "GPL-3.0-or-later",
-    "authors": [
-        {
-            "name": "LordRazen",
-            "email": "razen.mailer@gmail.com",
-            "homepage": "https://minecraft-heads.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require-dev": {
-        "phpunit/phpunit": "9.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "Minecraft\\": "src/"
-        }
+  "name": "lordrazen/minecraft-value",
+  "type": "library",
+  "description": "A PHP Library For the Minecraft Custom Heads Value.",
+  "keywords": [
+    "Minecraft",
+    "Value",
+    "Heads"
+  ],
+  "homepage": "https://github.com/LordRazen/minecraft-value",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "LordRazen",
+      "email": "razen.mailer@gmail.com",
+      "homepage": "https://minecraft-heads.com"
     }
+  ],
+  "minimum-stability": "stable",
+  "require-dev": {
+    "phpunit/phpunit": "11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Minecraft\\": "src/"
+    }
+  }
 }
